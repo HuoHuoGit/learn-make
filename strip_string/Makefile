@@ -9,10 +9,10 @@ $(warning strip space_var is [$(strip $(space_var))])
 #all:;@echo "nothing to do"
 #endif
 
-#ifneq ($(strip $(space_var)),)
+#ifneq ($(strip $(space_var)),)   #right
 #ifneq "$(strip $(space_var))" ""
-#ifneq ($(space_var),)
-ifneq "$(space_var)" ""
+#ifneq ($(space_var),)            #error
+#ifneq "$(space_var)" ""
 all: 
 	@echo "something"
 else
